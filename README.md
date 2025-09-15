@@ -23,7 +23,7 @@ Profit
 ## 3rd and final step:
 
 In the code you are building to use DSPy, use some variation of the following when configuring your LM:
-
+```
 # --- 1. Configure DSPy to connect to our SGLang Server ---
 try:
     llm = dspy.LM(
@@ -39,3 +39,9 @@ try:
 except Exception as e:
     print(f"❌ CRITICAL: Failed to configure DSPy: {e}")
     exit(1)
+```
+
+
+
+
+
