@@ -24,7 +24,7 @@ source .venv/bin/activate
 # Create the pyproject.toml blueprint with the complete build fix
 cat << 'EOT' > pyproject.toml
 [project]
-name = "liminaut-engine"
+name = "<your>-engine"
 version = "0.1.0"
 requires-python = ">=3.10"
 dependencies = [
@@ -55,7 +55,6 @@ MODEL_REPO="sequelbox/Qwen3-14B-DAG-Reasoning" # add your model here, format is 
 MODEL_DIR="/workspace/models/Qwen3-14B-DAG-Reasoning"
 
 mkdir -p "$MODEL_DIR"
-mkdir -p "/workspace/books"
 
 if [ -d "$MODEL_DIR" ] && [ "$(ls -A "$MODEL_DIR")" ]; then
     echo "✅ Model directory '$MODEL_DIR' already exists. Skipping download."
